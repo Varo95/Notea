@@ -1,17 +1,16 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary blue">
     <ion-title>
-      Tab 3
+      {{'CONTACTS' | translate | titlecase}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  ES <ion-toggle #mytoogle color="light" (ionChange)=changeLanguage($event)></ion-toggle> EN
+  <ion-button expand="block" (click)="capturePhoto()">
+    <ion-icon name="camera" slot="end"></ion-icon>Hacer foto
+  </ion-button>
+  <ion-img *ngIf="this.image" [src]="this.image"></ion-img>
+  <p>Desarrollado por: Álvaro Pérez Urbano 2ºCFGS</p>
 </ion-content>

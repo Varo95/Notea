@@ -27,7 +27,7 @@ const routes: Routes = [
     ]
   },
   {
-    path: '',
+    path: 'private',
     redirectTo: '/tabs/tab1',
     pathMatch: 'full'
   }

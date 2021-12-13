@@ -1,0 +1,16 @@
+{
+	"appId": "com.aaperez.Notea",
+	"appName": "Notea",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"GoogleAuth": {
+			"scopes": [
+				"profile",
+				"email"
+			],
+			"serverClientId": "586586932206-k0nfffjbt8qvl030k3t0k3d9cos11frl.apps.googleusercontent.com",
+			"forceCodeForRefreshToken": true
+		}
+	}
+}
